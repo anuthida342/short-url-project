@@ -16,10 +16,10 @@
 <div class="container mt-5">
     <div class="row align-items-center">
         <h1>INPUT URL</h1>
-        <form action="/new">
-            <div class="mb-3 mt-3" method="post">
+        <form action="/save" method="post">
+            <div class="mb-3 mt-3">
                 @csrf
-                <input type="text" class="form-controller" id="FormControllerInput1" placeholder="Past Long URL">
+                <input type="text" class="form-controller" id="FormControllerInput1" name="FormControllerInput1" placeholder="Past Long URL">
             </div>
             <div class="col-3">
                 <button class="btn btn-outline-primary">Create Short url</button>
